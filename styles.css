@@ -1,0 +1,293 @@
+/* General styles for the body background */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1563132335-e0e3af3c2c1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fHRyYXZlbHxlbnwwfHx8fDE2NjkzNjExMzM&ixlib=rb-4.0.3&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Overlay effect for content */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    z-index: -1; /* Push the overlay behind the content */
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black header */
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+/* Nav links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.hero button:hover {
+    background-color: #ff7f00;
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.6);
+}
+
+/* Search Section Styles */
+.search-section {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.search-bar-container {
+    display: flex; /* Use flexbox for alignment */
+    gap: 10px; /* Adjust the gap between the input and buttons */
+    justify-content: center; /* Align items horizontally in the center */
+    align-items: center; /* Align items vertically in the center */
+}
+
+.search-bar-container input {
+    width: 250px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-bar-container input:focus {
+    border-color: #ff7f00;
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+}
+
+/* Common styles for buttons */
+.search-bar-container button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+/* Search Button */
+.search-btn {
+    background-color: #FFA500;
+    color: white;
+}
+
+.search-btn:hover {
+    background-color: #ff7f00;
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.6);
+}
+
+/* Clear Button */
+.clear-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+}
+
+.clear-btn:hover {
+    background-color: #e6e6e6;
+    border-color: #999;
+    box-shadow: 0 4px 10px rgba(153, 153, 153, 0.4);
+}
+
+/* Results Section */
+.results {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+}
+
+/* Contact Form Section */
+.contact-section {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 2rem; /* Reduced padding inside the form container */
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Optional: Adds a subtle shadow to the form */
+}
+
+.contact-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Further reduced gap between form elements */
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.25rem; /* Reduced the margin to decrease the gap between label and input */
+}
+
+input, textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid #FFA500;
+    outline: none;
+    transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff7f00;
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px; /* Reduced minimum height */
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem; /* Reduced padding on the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    /* margin-top: 0rem; Added a small margin top to separate from the inputs */
+}
+
+button:hover {
+    background-color: #ff7f00;
+    box-shadow: 0 4px 10px rgba(255, 127, 0, 0.6);
+}
+
+/* About Page Styles */
+.about-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Team Section Styles */
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+}

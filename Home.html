@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">TravelBloom</div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+            Explore breathtaking destinations, immerse yourself in diverse cultures, 
+            and create unforgettable memories with TravelBloom.
+        </p>
+        <button onclick="showAlert()">Book Now</button>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search for Destinations</h2>
+        <div class="search-bar-container">
+            <input type="text" id="search-bar" placeholder="Type a destination or keyword">
+            <button class="search-btn" onclick="performSearch()">Search</button>
+            <button class="clear-btn" onclick="clearResults()">Clear</button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results" id="results"></section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 TravelBloom. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
